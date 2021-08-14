@@ -477,7 +477,7 @@ result.append("lol123")
 result.append("010203")
 result.append("chocolate")
 result.append("football")
-	return results
+return results
 def methode():
   os.system("clear")
   banner()
