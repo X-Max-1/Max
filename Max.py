@@ -430,7 +430,6 @@ def generate(text):
                                         result.append("000786")
                                         result.append("786000")
                                         result.append ("223344")
-                                  result.append("010203")
 result.append("102030")
 result.append("998877")      
 result.append("123456789")
