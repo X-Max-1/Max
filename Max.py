@@ -970,5 +970,5 @@ class crack3:
 			print "\r   [Crack] %s/%s - ok-:%s - cp-:%s"%(self.ko,len(self.fl),len(self.ada),len(self.cp)),;sys.stdout.flush()
 		except:
 			self.main(fl)
-if _name=='main_':
+if _name_=="main_":
   menu()
