@@ -1337,6 +1337,6 @@ def ress():
     input(k+"\n[ "+p+"Back"+k+" ]"+p)
     menu()
 
-if _name=="main_":
+if name=="main_":
 	os.system("git pull")
 	country()
